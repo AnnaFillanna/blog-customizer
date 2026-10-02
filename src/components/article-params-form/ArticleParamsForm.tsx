@@ -12,9 +12,9 @@ import { ArrowButton } from 'src/ui/arrow-button';
 import { Button } from 'src/ui/button';
 import { Select } from 'src/ui/select';
 import { Text } from 'src/ui/text';
-
+import { RadioGroup } from 'src/ui/radio-group';
 import type { ArticleStateType } from 'src/constants/articleProps';
-
+import { Separator } from 'src/ui/separator';
 import styles from './ArticleParamsForm.module.scss';
 
 export const ArticleParamsForm = ({
@@ -83,7 +83,7 @@ export const ArticleParamsForm = ({
           onReset={handleReset}
           ref={formRef}
         >
-          <Text size={31} weight={800} uppercase>
+          <Text as="h2" size={31} weight={800} uppercase>
             Задайте параметры
           </Text>
 
@@ -94,7 +94,8 @@ export const ArticleParamsForm = ({
             onChange={setFontFamily}
           />
 
-          <Select
+          <RadioGroup
+            name="font-size"
             title="Размер шрифта"
             selected={fontSize}
             options={fontSizeOptions}
@@ -107,7 +108,7 @@ export const ArticleParamsForm = ({
             options={fontColors}
             onChange={setFontColor}
           />
-
+          <Separator />
           <Select
             title="Цвет фона"
             selected={backgroundColor}
