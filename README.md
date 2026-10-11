@@ -13,9 +13,10 @@ npm install
 npm start
 ```
 
-Anschließend das [Projekt im Browser öffnen](http://localhost:5173/).
+Anschließend das [Projekt im Browser öffnen](http://localhost:5180/).
 Die Adresse funktioniert nur auf deinem Computer, solange der Entwicklungsserver läuft.
-Falls Port 5173 bereits belegt ist, verwende die im Terminal angezeigte lokale Adresse.
+Der feste Port 5180 verhindert Verwechslungen mit anderen lokalen Projekten.
+Falls dieser Port belegt ist, beende zuerst den dort laufenden Server.
 Mit `Strg + C` kannst du den Server beenden.
 
 ## Schritt 1: Die vorhandenen Komponenten kennenlernen
