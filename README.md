@@ -1,5 +1,23 @@
 # Projektarbeit: Umsetzung des Layouts
 
+## Projekt lokal ansehen
+
+Voraussetzung: Node.js und npm sind installiert.
+
+Das Repository herunterladen und den Entwicklungsserver starten:
+
+```sh
+git clone https://github.com/AnnaFillanna/blog-customizer.git
+cd blog-customizer
+npm install
+npm start
+```
+
+Anschließend das [Projekt im Browser öffnen](http://localhost:5173/).
+Die Adresse funktioniert nur auf deinem Computer, solange der Entwicklungsserver läuft.
+Falls Port 5173 bereits belegt ist, verwende die im Terminal angezeigte lokale Adresse.
+Mit `Strg + C` kannst du den Server beenden.
+
 ## Schritt 1: Die vorhandenen Komponenten kennenlernen
 
 [Projektentwurf](https://www.figma.com/file/FEeiiGLOsE7ktXbPpBxYoD/Custom-dropdown?type=design&node-id=0%3A1&mode=design&t=eXRJnWC6Xsuw0qR4-1)
