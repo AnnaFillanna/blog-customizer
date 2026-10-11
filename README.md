@@ -1,54 +1,53 @@
-# Проектная работа: Вёрстка проекта
+# Projektarbeit: Umsetzung des Layouts
 
-## Шаг первый. Изучаем имеющиеся компоненты
+## Schritt 1: Die vorhandenen Komponenten kennenlernen
 
-[Макет проекта](https://www.figma.com/file/FEeiiGLOsE7ktXbPpBxYoD/Custom-dropdown?type=design&node-id=0%3A1&mode=design&t=eXRJnWC6Xsuw0qR4-1)
+[Projektentwurf](https://www.figma.com/file/FEeiiGLOsE7ktXbPpBxYoD/Custom-dropdown?type=design&node-id=0%3A1&mode=design&t=eXRJnWC6Xsuw0qR4-1)
 
-Для запуска Storybook выполните:
+Storybook starten:
 
-```
+```sh
 npm run storybook
 ```
 
-Для запуска линтера для стилей выполните:
+Den Style-Linter ausführen:
 
-```
+```sh
 npm run stylelint
 ```
 
-Для запуска линтера выполните:
+Die Linter ausführen:
 
-```
+```sh
 npm run lint
 ```
 
-Для запуска форматтера выполните:
+Den Formatierer ausführen:
 
+```sh
+npm run prettier
 ```
-npm run format
-```
 
-### Функциональные требования
+### Funktionale Anforderungen
 
-- При нажатии на «стрелку» открывается сайдбар с настройками, при повторном нажатии или клике вне сайдбар закрывается.
-- При изменении настроек в сайдбаре они не применяются сразу.
-- После нажатия на «применить» стили применяются к статье.
-- При нажатии «сбросить» настройки в форме сбрасываются на начальные, которые были при открытии страницы, и стили применяются к статье.
-- Настройки устанавливаются через CSS-переменные, которые уже есть в стилях и установлены в коде в дефолтные значения.
+- Ein Klick auf den Pfeil öffnet die Seitenleiste mit den Einstellungen. Ein erneuter Klick oder ein Klick außerhalb schließt sie wieder.
+- Änderungen in der Seitenleiste werden nicht sofort übernommen.
+- Nach einem Klick auf „Anwenden“ werden die ausgewählten Stile auf den Artikel angewendet.
+- Ein Klick auf „Zurücksetzen“ setzt die Formulareinstellungen auf die ursprünglichen Werte beim Öffnen der Seite zurück und wendet diese auf den Artikel an.
+- Die Einstellungen werden über die vorhandenen CSS-Variablen gesteuert, die im Code mit Standardwerten vorbelegt sind.
 
-## Шаг второй. Реализация формы
+## Schritt 2: Das Formular implementieren
 
-Продумайте следующие моменты, прежде чем приступать к коду: 
+Überlege dir vor der Implementierung:
 
-- как будет организована композиция,
-- где вы будете хранить состояние,
-- как передавать данные между формой и страницей.
+- wie die Komponenten zusammengesetzt werden,
+- wo der Zustand gespeichert wird,
+- wie Daten zwischen dem Formular und der Seite übergeben werden.
 
-Затем реализуйте механику открытия-закрытия панели с формой, после этого можно будет временно зафиксировать ее пропсом для удобства реализации.
+Implementiere zunächst das Öffnen und Schließen der Formularleiste. Anschließend kannst du ihren Zustand vorübergehend über eine Prop festlegen, um die weitere Umsetzung zu erleichtern.
 
-После этого реализуйте форму из имеющихся компонент согласно макету.
+Setze danach das Formular anhand des Entwurfs mit den vorhandenen Komponenten um.
 
+## Schritt 3: Die Datenübergabe zwischen Formular und Seite umsetzen
 
-## Шаг третий. Обеспечьте передачу данных между формой и страницей
-
-Реализуйте по отдельности сохранение состояния страницы и состояние формы. Обеспечьте применение нового состояния после нажатия на «применить».
+Verwalte den Zustand der Seite und den Zustand des Formulars getrennt. Übernimm den neuen Zustand erst nach einem Klick auf „Anwenden“.

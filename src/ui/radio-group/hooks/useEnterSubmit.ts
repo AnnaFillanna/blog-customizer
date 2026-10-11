@@ -23,7 +23,7 @@ export const useEnterSubmit = ({ onChange, option }: UseEnterSubmit): void => {
 
     optionHtml.addEventListener('keydown', handleEnterKeyDown);
 
-    // не забываем удалять листенеры, при размонтировании компонента
+    // Event-Listener beim Entfernen der Komponente bereinigen
     // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
     return () => {
       optionHtml.removeEventListener('keydown', handleEnterKeyDown);

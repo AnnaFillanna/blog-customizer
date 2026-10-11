@@ -64,7 +64,7 @@ export const Select = (props: SelectProps): React.JSX.Element => {
         data-is-active={isOpen}
         data-testid="selectWrapper"
       >
-        <img src={arrowDown} alt="иконка стрелочки" className={styles.arrow} />
+        <img src={arrowDown} alt="Pfeilsymbol" className={styles.arrow} />
         <div
           className={clsx(
             styles.placeholder,

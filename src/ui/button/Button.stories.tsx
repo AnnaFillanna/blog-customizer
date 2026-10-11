@@ -14,16 +14,16 @@ export const ButtonStory: Story = {
     return (
       <div style={{ display: 'flex', gap: '10px' }}>
         <Button
-          title="Применить"
+          title="Anwenden"
           htmlType="submit"
           type="apply"
-          onClick={() => alert('клик на кнопку применить')}
+          onClick={() => alert('Auf Anwenden geklickt')}
         />
         <Button
-          title="Сбросить"
+          title="Zurücksetzen"
           htmlType="reset"
           type="clear"
-          onClick={() => alert('клик на кнопку сбросить')}
+          onClick={() => alert('Auf Zurücksetzen geklickt')}
         />
       </div>
     );

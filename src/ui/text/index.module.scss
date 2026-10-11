@@ -87,7 +87,7 @@
 	font-style: italic;
 }
 
-// для динамических типографий, используем константы, которые будут меняться
+// Für dynamische Typografie werden anpassbare Variablen verwendet
 
 .dynamic {
 	color: var(--font-color, #000);
@@ -95,7 +95,7 @@
 	font-family: var(--font-family, 'Open Sans');
 }
 
-// для заголовка и подзаголовка рамер шрифта одинаковый, меняется только цвет и семейство шрифтов
+// Bei Titel und Untertitel bleibt die Schriftgröße unverändert; nur Farbe und Schriftfamilie ändern sich
 
 .dynamicLite {
 	color: var(--font-color, #000);

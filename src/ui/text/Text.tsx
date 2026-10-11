@@ -6,25 +6,25 @@ import type { FontFamiliesClasses } from 'src/constants/articleProps';
 import styles from './index.module.scss';
 
 type TextProps = {
-  /** Сам текст для вывода */
+  /** Anzuzeigender Text */
   children: ReactNode;
-  /** Тэг которым отрендерить текст */
+  /** HTML-Element zur Darstellung des Textes */
   as?: ElementType;
-  /** Булевая пропса, должен ли текст меняться в зависимости от конфига */
+  /** Legt fest, ob sich der Text an die Konfiguration anpasst */
   dynamic?: boolean;
-  /** Размер шрифта */
+  /** Schriftgröße */
   size?: 12 | 18 | 22 | 25 | 31 | 38 | 45;
-  /** Вес шрифта */
+  /** Schriftstärke */
   weight?: 400 | 800;
-  /** Стиль шрифта */
+  /** Schriftstil */
   fontStyle?: 'italic' | 'normal';
-  /** Булевая пропса, отвечающая должен ли текст быть в верхнем регистре */
+  /** Legt fest, ob der Text in Großbuchstaben dargestellt wird */
   uppercase?: boolean;
-  /** Выравнивание текста */
+  /** Textausrichtung */
   align?: 'center' | 'left';
-  /** font-family текста */
+  /** Schriftfamilie des Textes */
   family?: FontFamiliesClasses;
-  /** Булевая пропса, делает динамическим только семью шрифтов и цвет */
+  /** Passt nur Schriftfamilie und Farbe dynamisch an */
   dynamicLite?: boolean;
 };
 

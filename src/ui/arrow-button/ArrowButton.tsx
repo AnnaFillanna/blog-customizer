@@ -3,7 +3,7 @@ import arrow from 'src/images/arrow.svg';
 
 import styles from './ArrowButton.module.scss';
 
-/** Функция для обработки открытия/закрытия формы */
+/** Funktion zum Öffnen und Schließen des Formulars */
 export type OnClick = () => void;
 
 type ArrowButtonProps = {
@@ -16,17 +16,17 @@ export const ArrowButton = ({
   onClick,
 }: ArrowButtonProps): React.JSX.Element => {
   return (
-    /* Не забываем указаывать role и aria-label атрибуты для интерактивных элементов */
+    /* Für interaktive Elemente role und aria-label angeben */
     <div
       role="button"
-      aria-label="Открыть/Закрыть форму параметров статьи"
+      aria-label="Artikeleinstellungen öffnen oder schließen"
       tabIndex={0}
       className={clsx(styles.container, { [styles.container_open]: isOpen })}
       onClick={onClick}
     >
       <img
         src={arrow}
-        alt="иконка стрелочки"
+        alt="Pfeilsymbol"
         className={clsx(styles.arrow, { [styles.arrow_open]: isOpen })}
       />
     </div>

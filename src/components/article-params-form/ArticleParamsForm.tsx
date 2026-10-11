@@ -10,8 +10,8 @@ export const ArticleParamsForm = (): React.JSX.Element => {
       <aside className={styles.container}>
         <form className={styles.form}>
           <div className={styles.bottomContainer}>
-            <Button title="Сбросить" htmlType="reset" type="clear" />
-            <Button title="Применить" htmlType="submit" type="apply" />
+            <Button title="Zurücksetzen" htmlType="reset" type="clear" />
+            <Button title="Anwenden" htmlType="submit" type="apply" />
           </div>
         </form>
       </aside>
