@@ -9,7 +9,9 @@
 	width: 100px;
 	height: 100px;
 	background-color: #000;
-	border-right: 1px;
+	border: 0;
+	cursor: pointer;
+	z-index: 2;
 	transition: transform 0.5s ease;
 }
 

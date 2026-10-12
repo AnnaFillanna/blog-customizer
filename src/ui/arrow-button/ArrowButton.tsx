@@ -17,10 +17,10 @@ export const ArrowButton = ({
 }: ArrowButtonProps): React.JSX.Element => {
   return (
     /* Für interaktive Elemente role und aria-label angeben */
-    <div
-      role="button"
+    <button
+      type="button"
+      aria-expanded={isOpen}
       aria-label="Artikeleinstellungen öffnen oder schließen"
-      tabIndex={0}
       className={clsx(styles.container, { [styles.container_open]: isOpen })}
       onClick={onClick}
     >
@@ -29,6 +29,6 @@ export const ArrowButton = ({
         alt="Pfeilsymbol"
         className={clsx(styles.arrow, { [styles.arrow_open]: isOpen })}
       />
-    </div>
+    </button>
   );
 };
